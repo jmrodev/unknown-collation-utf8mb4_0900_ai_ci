@@ -15,7 +15,7 @@ Si te encuentras con el error "unknown collation utf8mb4_0900_ai_ci" en una base
 
     Si encuentras un error similar a "sed: 1: "TU_ARCHIVO_SQL.sql": invalid command code Y", puedes probar con la siguiente alternativa:
 
-2. Abre tu archivo en el editor vi:
+2. Abre tu archivo en el editor vi (Tambien puedes cambiar en tu editor favorito reemplazando manualmente):
 
     ```bash
     sudo vi TU_ARCHIVO_SQL.sql
