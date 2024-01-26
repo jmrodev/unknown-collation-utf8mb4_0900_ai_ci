@@ -38,3 +38,8 @@ Si estás utilizando una versión reciente de MariaDB, considera la posibilidad 
 
 Estas instrucciones te ayudarán a actualizar la collation y el conjunto de caracteres en tu archivo SQL para resolver el problema mencionado y asegurar una compatibilidad más moderna.
 
+# Reemplazar collation y CHARSET en el archivo SQL usando sed
+```bash
+sed -i 's/utf8mb4_0900_ai_ci/utf8mb4_unicode_520_ci/g' TU_ARCHIVO_SQL.sql
+sed -i 's/CHARSET=utf8mb4/CHARSET=utf8/g' TU_ARCHIVO_SQL.sql
+ ```
