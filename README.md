@@ -13,7 +13,7 @@ Si te encuentras con el error "unknown collation utf8mb4_0900_ai_ci" en una base
 
     Asegúrate de reemplazar "TU_ARCHIVO_SQL.sql" con el nombre real de tu archivo SQL.
 
-    Ten en cuenta que si encuentras un error similar a "sed: 1: "TU_ARCHIVO_SQL.sql": invalid command code Y", puedes optar por la siguiente alternativa.
+    Si encuentras un error similar a "sed: 1: "TU_ARCHIVO_SQL.sql": invalid command code Y", puedes probar con la siguiente alternativa:
 
 2. Abre tu archivo en el editor vi:
 
@@ -30,4 +30,11 @@ Si te encuentras con el error "unknown collation utf8mb4_0900_ai_ci" en una base
 
     4. Guarda los cambios presionando `Esc`, escribiendo `:wq`, y presionando `Enter`.
 
-Estas instrucciones te ayudarán a actualizar la collation y el conjunto de caracteres en tu archivo SQL para resolver el problema mencionado.
+**Nota Adicional para Compatibilidad Más Moderna:**
+
+Si estás utilizando una versión reciente de MariaDB, considera la posibilidad de cambiar a una collación más moderna para un mejor soporte y compatibilidad:
+
+- Puedes utilizar `utf8mb4_unicode_520_ci` para seguir las reglas de Unicode versión 5.2, o `uca1400_as_ci` si tu versión de MariaDB es más reciente.
+
+Estas instrucciones te ayudarán a actualizar la collation y el conjunto de caracteres en tu archivo SQL para resolver el problema mencionado y asegurar una compatibilidad más moderna.
+
